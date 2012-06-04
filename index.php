@@ -28,15 +28,14 @@
             $('#preloader').show();
             onload = function() {        
                 $('#preloader').hide();
-                $('.container').addClass('show');
+                $('#container').addClass('show');
             }
         });
         </script>
     </head>
     <body>
-        <div id="preloader">&nbsp;</div>
-        <div id="preload"></div>               
-        <div class="container">
+        <div id="preloader"></div>   
+        <div id="container">
             <section class="top">
         <?php /* OPEN */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/open.php"); ?>            
             </section>
