@@ -31,7 +31,7 @@ a img {
 a:hover img {
     border:none;
     border-style:none;
-    outline:none;
+    outline:none; 
     -webkit-opacity:0.6;
     -moz-opacity:   0.6;
     -ms-opacity:    0.6;
