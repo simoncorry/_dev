@@ -39,7 +39,18 @@
             <section class="top">
         <?php /* OPEN */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/open.php"); ?>            
             </section>
-            <section class="content">                
+            <section class="content">      
+				<div class="sky"></div>
+				<div class="cloud-small">
+				    <div class="cloud-small-1"></div>
+					<div class="cloud-small-2"></div>
+					<div class="cloud-small-3"></div>
+					<div class="cloud-small-4"></div>
+					<div class="cloud-small-5"></div>
+					<div class="cloud-small-6"></div>
+					<div class="cloud-small-7"></div>
+				</div>
+          
             </section>
             <section class="bottom">
                 &nbsp;
