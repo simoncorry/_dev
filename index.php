@@ -5,7 +5,6 @@
 <!--[if IE 9]>   <html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
 <html lang="en">
     <head>
-        <script type="text/javascript">/*var _sf_startpt=(new Date()).getTime()*/</script>
         <meta charset="utf-8" />
         
         <?php /* ERROR */ ini_set('error_reporting', E_ALL); ini_set('display_errors', 0); ?>
@@ -23,100 +22,29 @@
         <?php /* LINKS */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/head.php"); ?>  
              
         <!-- /// PRELOAD  /// -->
-        <script type="text/javascript">
+        <script type="text/javascript">        
         $(document).ready(function() {    
             $('#preloader').show();
             onload = function() {        
                 $('#preloader').hide();
                 $('#container').addClass('show');
+                $('#canvas_container').show();
             }
         });
-        </script>
+        </script>       
     </head>
-    <body>
+    <body>   
         <div id="preloader"></div>   
         <div id="container">
+        
             <section class="top">
         <?php /* OPEN */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/open.php"); ?>            
             </section>
-            <section class="content">      
+            <section class="content">  
 				<div class="sky"></div>
-				<div class="cloud-small">
-				    <div class="cloud-small-1"></div>
-					<div class="cloud-small-2"></div>
-					<div class="cloud-small-3"></div>
-					<div class="cloud-small-4"></div>
-					<div class="cloud-small-5"></div>
-					<div class="cloud-small-6"></div>
-					<div class="cloud-small-7"></div>
-				</div>
-          
+                <div id="cloud-small-1"></div>
             </section>
-            <section class="bottom">
-                &nbsp;
-            </section>
+            <section class="bottom"></section>
         </div>
-        
-        <!-- /// GOOGLE /// -->
-        <script type="text/javascript">
-        /*  var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-24800976-1']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
-        
-        <!-- Plus -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-        
-        <!-- /// FACEBOOK /// -->
-        <script type="text/javascript">
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=144137692323731";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
-        
-        <!-- /// TWITTER /// -->
-        <script type="text/javascript">
-          !function(d,s,id){
-            var js,fjs=d.getElementsByTagName(s)[0];
-            if(!d.getElementById(id)){
-              js=d.createElement(s);
-              js.id=id;js.src="//platform.twitter.com/widgets.js";
-              fjs.parentNode.insertBefore(js,fjs);
-             }
-           }(document,"script","twitter-wjs");
-        </script>
-        
-        <!-- /// CHARTBEAT /// -->
-        <script type="text/javascript">
-        var _sf_async_config={uid:33072,domain:"simoncorry.com"};
-        (function(){
-          function loadChartbeat() {
-            window._sf_endpt=(new Date()).getTime();
-            var e = document.createElement('script');
-            e.setAttribute('language', 'javascript');
-            e.setAttribute('type', 'text/javascript');
-            e.setAttribute('src',
-               (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-               "js/chartbeat.js");
-            document.body.appendChild(e);
-          }
-          loadChartbeat();
-        })();*/
-        </script>        
     </body>
 </html>

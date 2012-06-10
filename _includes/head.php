@@ -17,4 +17,5 @@
         <script type="text/javascript" src="/_media/js/modernizr-2.5.3.min.js"></script>
         <script type="text/javascript" src="/_media/js/raphael-2.1.0.min.js"></script>
         <script type="text/javascript" src="/_media/js/links.js"></script>
+        <script type="text/javascript" src="/_media/js/assets.js"></script>
 	
