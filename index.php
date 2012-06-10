@@ -8,7 +8,7 @@
         <meta charset="utf-8" />
         
         <?php /* ERROR */ ini_set('error_reporting', E_ALL); ini_set('display_errors', 0); ?>
-        <?php /* TAG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/tag.php"); ?>
+        <?php /* TAG */ //include_once($_SERVER['DOCUMENT_ROOT']."/_includes/tag.php"); ?>
         <?php /* PAGE */ $thisPage="Home"; ?>
         
         <title>Science &amp; Creativity</title>
@@ -17,8 +17,8 @@
         <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=1.0"> 
                     
-        <?php /* FACEBOOK OG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/fb-og.php"); ?>
-        <?php /* GOOGLE PLUS SNIPPET */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/gp-snippet.php"); ?>
+        <?php /* FACEBOOK OG */ //include_once($_SERVER['DOCUMENT_ROOT']."/_includes/fb-og.php"); ?>
+        <?php /* GOOGLE PLUS SNIPPET */ //include_once($_SERVER['DOCUMENT_ROOT']."/_includes/gp-snippet.php"); ?>
         <?php /* LINKS */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/head.php"); ?>  
              
         <!-- /// PRELOAD  /// -->
@@ -35,8 +35,7 @@
     </head>
     <body>   
         <div id="preloader"></div>   
-        <div id="container">
-        
+        <div id="container">       
             <section class="top">
         <?php /* OPEN */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/open.php"); ?>            
             </section>
