@@ -112,9 +112,14 @@ $(document).ready(function() {
                 $('section.top').addClass('top-fade'),
                 $('section.bottom').addClass('bottom-fade'),
                 $('section.content').addClass('content-active'),
-                $('section.top > header').addClass('header-remove');
+                $('section.top > header').addClass('hide');
             });
-        },1000);
+        },1000);       
+        setInterval(function(){
+            $('section.top,section.bottom,section.top > header').each(function(){
+                $(this).addClass('hide');
+            });         
+        },2000);
     });
 	// FOOTER
 	$("#html5-badge-wrapper").click(function(){ window.open('http://www.w3.org/html/logo/','_blank'); });
