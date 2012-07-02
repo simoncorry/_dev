@@ -45,6 +45,10 @@
 				<div class="sky">
     				<div id="cloud-small-1"></div>
     				<div id="cloud-small-2"></div>
+    				<div id="cloud-small-3"></div>
+    				<div id="cloud-big-1"></div>
+    				<div id="cloud-big-2"></div>
+    				<div id="cloud-big-3"></div>
 				</div>
                 
             </section>

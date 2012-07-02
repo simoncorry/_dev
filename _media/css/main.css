@@ -239,12 +239,43 @@ section.content > div.sky div#cloud-small-1 {
 }
 
 section.content > div.sky div#cloud-small-2 {
-    background:red;
     position:absolute;
 	left:120px;
 	top:40px;
     width:80px;
     height:50px;
+}
+
+section.content > div.sky div#cloud-small-3 {
+    position:absolute;
+	left:220px;
+	top:40px;
+    width:80px;
+    height:50px;
+}
+
+section.content > div.sky div#cloud-big-1 {
+    position:absolute;
+	left:320px;
+	top:40px;
+    width:80px;
+    height:45px;
+}
+
+section.content > div.sky div#cloud-big-2 {
+    position:absolute;
+	left:460px;
+	top:40px;
+    width:80px;
+    height:45px;
+}
+
+section.content > div.sky div#cloud-big-3 {
+    position:absolute;
+	left:600px;
+	top:40px;
+    width:80px;
+    height:45px;
 }
 
 /* /// TOOL BELT /// */
