@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 });
 
 // Add Port And Listen
-var port = 1337;
+var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
