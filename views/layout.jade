@@ -1,16 +1,41 @@
 doctype 5
-<!--[if IE 9]><html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
-<!--[if LT IE 9]>script(src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js") script(window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})}))<![endif]-->
+
+//if lt IE 7
+    html(lang="en", class="ie6 ie", xmlns="http://www.w3.org/1999/xhtml")
+//if IE 7
+    html(lang="en", class="ie7 ie", xmlns="http://www.w3.org/1999/xhtml")
+//if IE 8
+    html(lang="en", class="ie8 ie", xmlns="http://www.w3.org/1999/xhtml")
+//if IE 9
+    html(lang="en", class="ie9 ie", xmlns="http://www.w3.org/1999/xhtml")
+//if LT IE 9
+    script(src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js") script(window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})}))
 
 html
   head
-    title= title
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title=title
+    meta(name="description", content=description)
+    meta(name="author", content=author)
+    // /// VIEWPORT /// 
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    // /// ICONS /// 
+    link(rel="icon", type="image/x-icon", href="/assets/images/lib/icons/favicon.ico")
+    link(rel="shortcut icon", type="image/x-icon", href="/assets/images/lib/icons/favicon.ico")
+    link(rel="apple-touch-icon-precomposed", href="/assets/images/lib/icons/lib/icons/apple-touch-icon-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/assets/images/lib/icons/apple-touch-icon-72x72-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/assets/images/lib/icons/apple-touch-icon-114x114-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png")
     // /// CSS /// 
     link(rel="stylesheet", href="/css/main.css")
     // /// JS ///
     script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js")
   body
     block content
+    block test
     
     
     

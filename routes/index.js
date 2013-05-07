@@ -1,8 +1,14 @@
-
 /*
- * GET home page.
+ * -------------
+ * GET Home Page
+ * -------------
  */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Simon\'s First Node Project' });
+exports.page = function(req, res){
+  res.render('index', { 
+    title       : 'Home',
+    description : 'Home Page',
+    keywords    : '*** KEYWORDS ***',
+    author      : 'Simon Corry' 
+  });
 };
