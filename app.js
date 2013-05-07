@@ -19,7 +19,7 @@ var home  = require('./routes')
 app.get('/', home.page);
 app.get('/blog', blog.page);
 app.get('/about', about.page);
-// app.get('/blog/:id/:title', blog.page);
+//app.get('/blog/:id/:title', blog.page);
 
 // Environments
 app.set('port', process.env.PORT || 5000);
