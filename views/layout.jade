@@ -22,13 +22,25 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     meta(name="apple-mobile-web-app-capable", content="yes")
     meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    // /// FACEBOOK ///
+    meta(name="", property="og:title"      , content=title)
+    meta(name="", property="og:type"       , content="company")
+    meta(name="", property="og:image"      , content="http://node1337.herokuapp.com/images/lib/icons/facebook-google.png")
+    meta(name="", property="og:url"        , content="http://node1337.herokuapp.com/")
+    meta(name="", property="og:site_name"  , content=title)
+    meta(name="", property="og:description", content=description)
+    meta(name="", property="fb:admins"     , content="512859885")
+    // /// GOOGLE ///
+    meta(itemprop="name"       , content=title)
+    meta(itemprop="description", content=description)
+    meta(itemprop="image"      , content="http://node1337.herokuapp.com/assets/images/lib/icons/facebook-google.png")
     // /// ICONS /// 
-    link(rel="icon", type="image/x-icon", href="/assets/images/lib/icons/favicon.ico")
-    link(rel="shortcut icon", type="image/x-icon", href="/assets/images/lib/icons/favicon.ico")
-    link(rel="apple-touch-icon-precomposed", href="/assets/images/lib/icons/lib/icons/apple-touch-icon-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/assets/images/lib/icons/apple-touch-icon-72x72-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/assets/images/lib/icons/apple-touch-icon-114x114-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png")
+    link(rel="icon", type="image/x-icon", href="/images/lib/icons/favicon.ico")
+    link(rel="shortcut icon", type="image/x-icon", href="/images/lib/icons/favicon.ico")
+    link(rel="apple-touch-icon-precomposed", href="/images/lib/icons/lib/icons/apple-touch-icon-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/images/lib/icons/apple-touch-icon-72x72-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/images/lib/icons/apple-touch-icon-114x114-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/images/lib/icons/apple-touch-icon-144x144-precomposed.png")
     // /// CSS /// 
     link(rel="stylesheet", href="/css/main.css")
     // /// JS ///
