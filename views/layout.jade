@@ -42,26 +42,54 @@ html
     link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/images/lib/icons/apple-touch-icon-114x114-precomposed.png")
     link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/images/lib/icons/apple-touch-icon-144x144-precomposed.png")
     // /// CSS /// 
-    link(rel="stylesheet", href="/css/main.css")
+    link(rel="stylesheet", href="/css/lib/jquery.preloader-1.1.css")
+    link(rel="stylesheet", href="/css/lib/normalize.min.css")
+    link(rel="stylesheet", href="/css/lib/reset.min.css")
+    link(rel="stylesheet", href="/css/app/main.css")
     // /// JS ///
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js")
-  body
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js")
+    script(src="/js/lib/jquery.preloader-1.1.js")
+    script(src="/js/lib/plugins.js")
+    // PLUGINS
+    script
+      $(function() {
+        $('#preloader').moombaPreloader({
+          type      : '1',                /* Rectangle(1), Circle(2) */
+          box_color : 'rgb(254,254,254)', /* Outer shell         - CSS color values */
+          bar_color : 'rgb(204,102,51)' , /* Animated properties - CSS color values */
+        });
+      });
+    
+  body#preloader
     block content
     block test
     
     
     
-    a(href="https://plus.google.com/112943355702113622332?rel=author") G+
-    a(href="https://plus.google.com/112943355702113622332?rel=publisher") G+
-    
+    // /// TEST ///
     div
-        p
-            |A
-            |L
-            |P
-            |H
-            |A
+      p
+        |A
+        |L
+        |P
+        |H
+        |A
             
+      p.
+        A
+        L
+        P
+        H
+        A
     
     
     
+    
+    // /// GOOGLE ///
+    // Search
+    a(href="https://plus.google.com/112943355702113622332?rel=author", class="hidden")
+    a(href="https://plus.google.com/112943355702113622332?rel=publisher")
+    // Analytics
+            
