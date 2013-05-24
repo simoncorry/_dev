@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if LT IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<html lang="en">
+    <!--
+    
+    =====================
+    .....................
+    ... .................
+    .. + ................
+    ... ...... ..........
+    ......... ^ .........
+    .......... ..........
+    ......... ^ .........          
+    ........ ^^^ ........
+    ....... ^^^^^ .......
+    ...... ^^^^^^^ ......
+    ..... ^^^^^^^^^ .....     
+    =====================
+    WITH  <3  SIMON CORRY
+    =====================
+    
+    http://simoncorry.com
+              
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Science &amp; Creativity</title>
+        <meta name="description" content="Welcome one and all to the new home of science and creativity.">
+        <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development">   
+        <meta name="author" content="Simon Corry">
+   
+        <!-- /// VIEWPORT /// -->
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <?php /* Facebook */ include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/facebook.php"); ?>
+        <?php /* Google */   include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/google.php"); ?>
+        <?php /* Head */     include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php"); ?>
+        
+        
+    </head>
+    <body id="preloader">
+    
+        <section id="header">
+            <header>
+                <nav>   
+                    <button id="btn_mobile">Nav</button>
+                    <ul id="nav_main">
+                        <li id="home">
+                            <div class="bar"></div>
+                            <div class="title">Home</div>
+                            <a href="" class="logo">
+                                
+                            </a>
+                        </li>
+                        <li id="blog">
+                            <div class="bar"></div>
+                            <div class="title">Blog</div>
+                            <a href="" class="blog">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                        <li id="projects">
+                            <div class="bar"></div>
+                            <div class="title">Projects</div>
+                            <a href="" class="projects">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                        <li id="contact">
+                            <div class="bar"></div>
+                            <div class="title">Contact</div>
+                            <a href="" class="contact">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                        <li id="labs">
+                            <div class="bar"></div>
+                            <div class="title">Labs</div>
+                            <a href="" class="labs">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav_social">
+                        <li><a href="" class="twitter"></a></li>
+                        <li><a href="" class="github"></a></li>
+                        <li><a href="" class="dribbble"></a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </nav>
+            </header>
+        </section>
+        
+        <section id="home">
+            <div class="wrapper">
+                <div class="logo">
+                    
+                </div>
+                <div class="bubble">
+                    <h1>Science &amp; Creativity</h1>
+                    <span class="quote">I'm a creative developer by day, gamer at night. Physics junkie and an 8-Bit nerd.</span>
+                </div>
+                <nav>
+                    <ul id="nav_home">
+                        <li>
+                            <div class="bar"></div>
+                            <a href="" class="blog">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="bar"></div>
+                            <a href="" class="projects">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="bar"></div>
+                            <a href="" class="contact">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="bar"></div>
+                            <a href="" class="labs">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--
+<a class="box blog"></a>
+                <a class="box projects"></a>
+                <a class="box contact"></a>
+                <a class="box labs"></a>
+-->
+                <div class="clearfix"></div>
+            </div>
+        </section>
+    
+        <?php /* Google Plus */ include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/google-plus.php"); ?>
+    </body>  
+</html>

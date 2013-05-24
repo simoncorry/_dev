@@ -11,21 +11,22 @@
 
 html,
 body {
-    background:url('/images/app/bg/bg-blue.jpg') repeat;
+    background:url('/public/images/app/bg/bg-main.jpg') repeat;
     background-size:129px !important;
     width:100%;
     height:100%;
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
 
 img {border:none; outline:none; border-style:none;}
 
 a:focus,a:active {outline:none;}
 
-::-moz-selection{background:rgba(56,151,160,0.6); color:#FFFFFF; text-shadow:none;}
-::selection     {background:rgba(56,151,160,0.6); color:#FFFFFF; text-shadow:none;}
-z
+::-moz-selection{background:#8AB29F; color:#F2EFDF; text-shadow:none;}
+::selection     {background:#8AB29F; color:#F2EFDF; text-shadow:none;}
+
 /* /// TOOL BELT /// */
 
 .hr {
@@ -44,28 +45,14 @@ z
     padding:20px 0px 20px 0px;
 }
 
-.absolute {position:absolute !important;}
-.fixed {position:fixed !important;}
-.relative {position:relative !important;}
-
-.no_scroll {overflow-x:hidden !important;}
-
-.no_padding {padding-top:0 !important;}
-
-.show   {opacity:1 !important;}
-.hidden   {display:none !important;}
-.hide {
-    visibility:hidden !important;
-    max-height:0 !important;
-    opacity:0 !important;
-}
-
 .left {float:left;}
 .right {float:right;}
 
 @media only screen 
 and (max-width : 760px) {
+    .mh,
     .mobile_hide {display:none;}
+    .ms,
     .mobile_show {display:block;}
 }
 

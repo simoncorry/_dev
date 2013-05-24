@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* /// TYPOGRAPHY /// */
+
+/* GENERAL */
+
+body {
+    font-family:'Noto Sans', sans-serif;
+    font-size:14px;
+    line-height:20px;
+    font-weight:400;
+    letter-spacing:0.5px;
+    color:rgb(104,107,109);
+    text-shadow:none;
+    word-break:break-word;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* HEADERS */
+
+h1 {
+    font-family:'Oswald', sans-serif;
+    font-size:34px;
+    line-height:34px;
+    font-weight:400;
+    text-transform:uppercase;
+    color:rgb(206,114,62);
+    text-shadow:1px 1px 0 rgb(242,239,223);
+    margin-bottom:14px;
+}
+
+h2 {}
+
+h3 {}
+
+/* ANCHORS */
+
+a {}
+
+a:hover {}
+
+/* BUTTONS */
+
+button#btn_mobile {text-indent:-999999px;}
+
+/* HEADER */
+
+ul#nav_main > li > div.title {
+    line-height:14px;
+    font-weight:700;
+    color:rgb(206,114,62);
+    text-shadow:1px 1px 0 rgb(242,239,223);   
+}
+
+/* HOME */
+
+section#home div.bubble span.quote {
+    font-size:17px;
+    line-height:24px;
+    font-weight:700;
+    font-style:italic;
+    text-shadow:1px 1px 0 rgb(242,239,223);
+}
+
+ul#nav_main > li a::after,
+ul#nav_home > li a::after {
+    font-size:16px;
+    font-weight:700;
+    color:rgb(242,239,223);
+}
+
+ul#nav_main > li a.blog::after,
+ul#nav_home > li a.blog::after     {text-shadow:-1px -1px 0 rgb(126,158,142);}
+ul#nav_main > li a.projects::after,
+ul#nav_home > li a.projects::after {text-shadow:-1px -1px 0 rgb(142,117,100);}
+ul#nav_main > li a.contact::after, 
+ul#nav_home > li a.contact::after  {text-shadow:-1px -1px 0 rgb(175,153,109);}
+ul#nav_main > li a.labs::after, 
+ul#nav_home > li a.labs::after     {text-shadow:-1px -1px 0 rgb(128,141,160);}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+/* Height */
+/*
+@media only screen 
+and (max-height: 704px) {}
+*/
+
+/* Width */
+
+@media only screen 
+and (max-width : 1609px) {
+    h1 {
+        font-size:28px;
+        line-height:28px;
+        margin-bottom:12px;
+    }
+    section#home div.bubble span.quote {
+        font-size:14px;
+        line-height:20px;
+    }
+    ul#nav_home > li a::after {
+        font-size:14px;
+    }
+}
+
+/*
+@media only screen 
+and (max-width : 999px) {}
+*/
+
+@media only screen 
+and (max-width : 747px) {
+    h1 {
+        font-size:30px;
+        line-height:34px;
+    }
+    section#home div.bubble span.quote {
+        font-size:14px;
+        font-style:normal;
+    }
+    ul#nav_home > li a::after {
+        font-size:16px;
+    }
+}
+
+/*
+@media only screen 
+and (max-width : 440px) {}
+*/
