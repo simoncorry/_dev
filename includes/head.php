@@ -27,3 +27,4 @@
         <script src="/public/js/lib/ga.js"></script>
         <script src="/public/js/app/main.js"></script>
         <script src="/public/js/app/header.js"></script>
+        <script src="/public/js/app/home.js"></script>

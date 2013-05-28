@@ -48,6 +48,9 @@ a:focus,a:active {outline:none;}
 .left {float:left;}
 .right {float:right;}
 
+.hidden {visibility:hidden;}
+.remove {display:none !important;}
+
 @media only screen 
 and (max-width : 760px) {
     .mh,

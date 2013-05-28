@@ -42,10 +42,8 @@
         <?php /* Google */   include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/google.php"); ?>
         <?php /* Head */     include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php"); ?>
         
-        
     </head>
     <body id="preloader">
-    
         <section id="header">
             <header>
                 <nav>   
@@ -54,14 +52,39 @@
                         <li id="home">
                             <div class="bar"></div>
                             <div class="title">Home</div>
-                            <a href="" class="logo">
-                                
+                            <a href="#" class="logo">
+                                <div class="bg"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
+                                <div class="pixel"></div>
                             </a>
                         </li>
                         <li id="blog">
                             <div class="bar"></div>
                             <div class="title">Blog</div>
-                            <a href="" class="blog">
+                            <a href="#" class="blog">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -93,7 +116,7 @@
                         <li id="projects">
                             <div class="bar"></div>
                             <div class="title">Projects</div>
-                            <a href="" class="projects">
+                            <a href="#" class="projects">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -125,7 +148,7 @@
                         <li id="contact">
                             <div class="bar"></div>
                             <div class="title">Contact</div>
-                            <a href="" class="contact">
+                            <a href="#" class="contact">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -157,7 +180,7 @@
                         <li id="labs">
                             <div class="bar"></div>
                             <div class="title">Labs</div>
-                            <a href="" class="labs">
+                            <a href="#" class="labs">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -188,9 +211,9 @@
                         </li>
                     </ul>
                     <ul id="nav_social">
-                        <li><a href="" class="twitter"></a></li>
-                        <li><a href="" class="github"></a></li>
-                        <li><a href="" class="dribbble"></a></li>
+                        <li><a href="http://twitter.com/simoncorry"  target="_blank" class="twitter"></a></li>
+                        <li><a href="http://github.com/simoncorry"   target="_blank" class="github"></a></li>
+                        <li><a href="http://dribbble.com/simoncorry" target="_blank" class="dribbble"></a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </nav>
@@ -210,7 +233,7 @@
                     <ul id="nav_home">
                         <li>
                             <div class="bar"></div>
-                            <a href="" class="blog">
+                            <a href="#" class="blog">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -412,7 +435,7 @@
                         </li>
                         <li>
                             <div class="bar"></div>
-                            <a href="" class="projects">
+                            <a href="#" class="projects">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -614,7 +637,7 @@
                         </li>
                         <li>
                             <div class="bar"></div>
-                            <a href="" class="contact">
+                            <a href="#" class="contact">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
@@ -816,7 +839,7 @@
                         </li>
                         <li>
                             <div class="bar"></div>
-                            <a href="" class="labs">
+                            <a href="#" class="labs">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
