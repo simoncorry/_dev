@@ -242,11 +242,6 @@ and (max-width : 1609px) {
     }
 }
 
-/*
-@media only screen 
-and (max-width : 999px) {}
-*/
-
 @media only screen /* iPad */
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
@@ -265,6 +260,11 @@ and (max-device-width : 1024px) {
     }
     ul#nav_home > li a > div.pixel {display:none;}
 }
+
+/*
+@media only screen 
+and (max-width : 999px) {}
+*/
 
 @media only screen 
 and (max-width : 747px) {

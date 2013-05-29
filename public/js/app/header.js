@@ -12,9 +12,41 @@ $(function nav_main() {
   var $nav_a   = $('#nav_main a');
   var $nav_btn = $('#btn_mobile');
   
+  var nav_li  = '#nav_main li';
   var nav_a    = '#nav_main a';
   var nav_btn  = '#btn_mobile';
   var running  = false;
+  
+  var isiPad   = navigator.userAgent.match(/iPad/i) != null;
+  
+  // Bar
+  function bar() {
+    $nav.on('click touchend', nav_a, function(e) {
+      e.preventDefault();
+      
+      if (running) {return;}
+      running = true;
+      
+      var $self = $(this);
+      
+      $self
+        .closest($nav_ul)
+        .children()
+        .removeClass('active');
+    
+      if(!$self.closest($nav_li).hasClass('active')) {
+        $self
+          .closest($nav_li)
+          .toggleClass('active');
+      }
+      
+      setTimeout(function() {
+        running = false;
+      },200);
+      
+      return false;     
+    });
+  }
   
   // Accordion
   function accordion() {
@@ -93,52 +125,24 @@ $(function nav_main() {
     }
   }
   
-  // Nav Links (Mobile)
-  function nav_main_links() {
-    $nav.on('click', nav_a, function(e) {
-      /*
-e.preventDefault();
-      
-      if (running) {return;}
-      running = true;
-      
-      var $self = $(this);
-      
-      $self.addClass('active');
-      setTimeout(function() {
-        $($nav_ul, $nav_btn).toggleClass('active');
-      }, 300);
-      setTimeout(function() {
-        $self
-          .toggleClass('active')
-          .closest($nav_ul)
-          .css('height','100%');
-          running = false;
-      }, 500); 
-      
-      return false;
-*/
-    });
-  }
-  
   // Load
+  bar();
   accordion();
   btn_mobile();
   btn_mobile_ios();
-  nav_main_links();
   
   // Responsive Check
   function check_width() {
     var windowsize = $window.width();
     // < 747
-    if (windowsize < 747) {
+    if (windowsize < 747 || isiPad == true) {
       accordion_unbind();
     }
     else {
       accordion();
       btn_mobile_clear();
     }
-  }
+  } check_width();
   
   // Orientation Check
   function check_orientation() {
