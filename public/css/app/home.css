@@ -101,8 +101,7 @@ ul#nav_home > li a::after {
 
 ul#nav_home > li a.active {
     -webkit-animation:nav_spin 1.4s ease-in-out;
-            animation:nav_spin 1.4s ease-in-out;
-            
+            animation:nav_spin 1.4s ease-in-out;           
 }
 
 @-webkit-keyframes nav_spin {
@@ -119,7 +118,7 @@ ul#nav_home > li a.active {
         opacity:0;
     }
     to   {
-        -webkit-transform:translate3d(0,100px,0) rotateY(720deg) scale3d(0.8,0.8,1);
+        -webkit-transform:translate3d(0,100px,0) rotateY(720deg) scale3d(0.6,0.6,1);
         opacity:0;
     }
 }
