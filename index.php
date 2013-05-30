@@ -49,7 +49,7 @@
                 <nav>   
                     <button id="btn_mobile">Nav</button>
                     <ul id="nav_main">
-                        <li id="home">
+                        <li id="li_home">
                             <div class="bar"></div>
                             <div class="title">Home</div>
                             <a href="#" class="logo">
@@ -81,7 +81,7 @@
                                 <div class="pixel"></div>
                             </a>
                         </li>
-                        <li id="blog">
+                        <li id="li_blog">
                             <div class="bar"></div>
                             <div class="title">Blog</div>
                             <a href="#" class="blog">
@@ -113,7 +113,7 @@
                                 <div class="pixel"></div>
                             </a>
                         </li>
-                        <li id="projects">
+                        <li id="li_projects">
                             <div class="bar"></div>
                             <div class="title">Projects</div>
                             <a href="#" class="projects">
@@ -145,7 +145,7 @@
                                 <div class="pixel"></div>
                             </a>
                         </li>
-                        <li id="contact">
+                        <li id="li_contact">
                             <div class="bar"></div>
                             <div class="title">Contact</div>
                             <a href="#" class="contact">
@@ -177,7 +177,7 @@
                                 <div class="pixel"></div>
                             </a>
                         </li>
-                        <li id="labs">
+                        <li id="li_labs">
                             <div class="bar"></div>
                             <div class="title">Labs</div>
                             <a href="#" class="labs">
@@ -231,7 +231,7 @@
                 </div>
                 <nav>
                     <ul id="nav_home">
-                        <li>
+                        <li id="box_blog">
                             <div class="bar"></div>
                             <a href="#" class="blog">
                                 <div class="bg"></div>
@@ -356,84 +356,9 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
                             </a>
                         </li>
-                        <li>
+                        <li id="box_projects">
                             <div class="bar"></div>
                             <a href="#" class="projects">
                                 <div class="bg"></div>
@@ -558,84 +483,9 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
                             </a>
                         </li>
-                        <li>
+                        <li id="box_contact">
                             <div class="bar"></div>
                             <a href="#" class="contact">
                                 <div class="bg"></div>
@@ -760,162 +610,12 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
                             </a>
                         </li>
-                        <li>
+                        <li id="box_labs">
                             <div class="bar"></div>
                             <a href="#" class="labs">
                                 <div class="bg"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
-                                <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>

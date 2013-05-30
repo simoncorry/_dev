@@ -6,13 +6,14 @@ $(function nav_main() {
   
   // Global Vars
   var $window  = $(window);
+  var $section = $('section#header');
   var $nav     = $('nav');
   var $nav_ul  = $('#nav_main');
   var $nav_li  = $('#nav_main li');
   var $nav_a   = $('#nav_main a');
   var $nav_btn = $('#btn_mobile');
   
-  var nav_li  = '#nav_main li';
+  var nav_li   = '#nav_main li';
   var nav_a    = '#nav_main a';
   var nav_btn  = '#btn_mobile';
   var running  = false;
@@ -21,7 +22,7 @@ $(function nav_main() {
   
   // Bar
   function bar() {
-    $nav.on('click touchend', nav_a, function(e) {
+    $section.on('click', nav_a, function(e) {
       e.preventDefault();
       
       if (running) {return;}
@@ -53,16 +54,16 @@ $(function nav_main() {
     $nav_li.mouseenter(function() { 
       var $self   = $(this)
       var margin  = 15
-      var h_width = $('#home     .title').outerWidth() + margin;
-      var b_width = $('#blog     .title').outerWidth() + margin;
-      var p_width = $('#projects .title').outerWidth() + margin;
-      var c_width = $('#contact  .title').outerWidth() + margin;
-      var l_width = $('#labs     .title').outerWidth() + margin;
-      if($self.is('#home'))     {$self.nextAll('li').css('transform','translate3d('+h_width+'px,0,0)');}
-      if($self.is('#blog'))     {$self.nextAll('li').css('transform','translate3d('+b_width+'px,0,0)');}
-      if($self.is('#projects')) {$self.nextAll('li').css('transform','translate3d('+p_width+'px,0,0)');}
-      if($self.is('#contact'))  {$self.nextAll('li').css('transform','translate3d('+c_width+'px,0,0)');}
-      if($self.is('#labs'))     {$self.nextAll('li').css('transform','translate3d('+l_width+'px,0,0)');}    
+      var h_width = $('#li_home     .title').outerWidth() + margin;
+      var b_width = $('#li_blog     .title').outerWidth() + margin;
+      var p_width = $('#li_projects .title').outerWidth() + margin;
+      var c_width = $('#li_contact  .title').outerWidth() + margin;
+      var l_width = $('#li_labs     .title').outerWidth() + margin;
+      if($self.is('#li_home'))     {$self.nextAll('li').css('transform','translate3d('+h_width+'px,0,0)');}
+      if($self.is('#li_blog'))     {$self.nextAll('li').css('transform','translate3d('+b_width+'px,0,0)');}
+      if($self.is('#li_projects')) {$self.nextAll('li').css('transform','translate3d('+p_width+'px,0,0)');}
+      if($self.is('#li_contact'))  {$self.nextAll('li').css('transform','translate3d('+c_width+'px,0,0)');}
+      if($self.is('#li_labs'))     {$self.nextAll('li').css('transform','translate3d('+l_width+'px,0,0)');}    
     });          
     $nav_li.mouseleave(function() {   
       $nav_li.css('transform','translate3d(0,0,0)');
@@ -74,7 +75,8 @@ $(function nav_main() {
   
   // Mobile Button
   function btn_mobile() {
-    $nav.on('click touchend', nav_btn, function() {
+    $section.on('click touchend', nav_btn, function(e) {
+      e.preventDefault();
       
       if (running) {return;}
       running = true;
@@ -125,6 +127,19 @@ $(function nav_main() {
     }
   }
   
+  // Mobile Close
+  function mobile_close() {
+    $section.on('click', nav_a, function(e) {
+      e.preventDefault();
+      var $self = $(this);
+      $self
+        .toggleClass('active');
+      $self
+        .closest($nav_ul)
+        .removeClass('active');
+    });
+  }
+  
   // Load
   bar();
   accordion();
@@ -137,6 +152,7 @@ $(function nav_main() {
     // < 747
     if (windowsize < 747 || isiPad == true) {
       accordion_unbind();
+      mobile_close();
     }
     else {
       accordion();
