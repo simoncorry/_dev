@@ -128,6 +128,9 @@
               .addClass('invisible'),
             $('#wrapper')
               .addClass('show');
+            // Simon Corry Homepage
+            $('section#home div.logo, section#home div.bubble, ul#nav_home > li')
+              .addClass('active');
           },1000);
         }    
     
