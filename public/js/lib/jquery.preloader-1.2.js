@@ -117,7 +117,7 @@
         onload = function() {
           setTimeout(function() {  
             $body
-              .css('overflow','visible'),     
+              .css('overflow','visible'),    
             $('#shroud')
               .removeClass('active'),
             $('.typeTarget')
@@ -129,7 +129,7 @@
             $('#wrapper')
               .addClass('show');
             // Simon Corry Homepage
-            $('section#home div.logo, section#home div.bubble, ul#nav_home > li')
+            $('section#home')
               .addClass('active');
           },1000);
         }    

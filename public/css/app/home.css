@@ -13,8 +13,6 @@ ul#nav_home > li a {
 
 section#home {
     position:relative;
-    background:url('/public/images/app/bg/bg-blue.png') repeat;
-    background-size:129px !important;
     width:100%;
     height:100%;
     min-height:100%;
@@ -45,21 +43,36 @@ section#home div.logo {
             transform:translate3d(-50px,-50px,0) scale3d(0.8,0.8,1);
 }
 
-section#home div.logo.active {
-    -webkit-animation:start_logo 0.5s 0.6s forwards ease-in-out;
-            animation:start_logo 0.5s 0.6s forwards ease-in-out;
+section#home.active div.logo {
+    -webkit-animation:start_logo 0.5s 0.3s forwards ease-in-out;
+            animation:start_logo 0.5s 0.3s forwards ease-in-out;
 }
 
 @-webkit-keyframes start_logo {
-    from {-webkit-transform:translate3d(-50px,-50px,0) scale3d(0.8,0.8,1); opacity:0;}
+    from {-webkit-transform:translate3d(0,-75px,0) scale3d(0.8,0.8,1); opacity:0;}
     75%  {opacity:1;}
     to   {-webkit-transform:translate3d(0,0,0) scale3d(1.0,1.0,1); opacity:1;}
 }
 
 @keyframes start_logo {
-    from {transform:translate3d(-50px,-50px,0) scale3d(0.8,0.8,1); opacity:0;}
+    from {transform:translate3d(0,-75px,0) scale3d(0.8,0.8,1); opacity:0;}
     75%  {opacity:1;}
     to   {transform:translate3d(0,0,0) scale3d(1.0,1.0,1); opacity:1;}
+}
+
+section#home.clear div.logo {
+    -webkit-animation:clear_logo 0.5s 1.5s backwards ease-in-out;
+            animation:clear_logo 0.5s 1.5s backwards ease-in-out;
+}
+
+@-webkit-keyframes clear_logo {
+    from {-webkit-transform:translate3d(0,0,0); opacity:1;}
+    to   {-webkit-transform:translate3d(0,-375px,0); opacity:0;}
+}
+    
+@keyframes clear_logo {
+    from {transform:translate3d(0,0,0); opacity:1;}
+    to   {transform:translate3d(0,-375px,0); opacity:0;}
 }
 
 section#home div.bubble {
@@ -79,7 +92,7 @@ section#home div.bubble {
             transform-origin:0 0 0;
 }
 
-section#home div.bubble.active {
+section#home.active div.bubble {
     -webkit-animation:start_bubble 0.5s 0.6s forwards ease-in-out;
             animation:start_bubble 0.5s 0.6s forwards ease-in-out;
 }
@@ -92,6 +105,21 @@ section#home div.bubble.active {
 @keyframes start_bubble {  
     0%   {transform:rotate(420deg); transform-origin:0 0 0; opacity:0;}  
     100% {transform:rotate(360deg); transform-origin:0 0 0; opacity:1;}  
+}
+
+section#home.clear div.bubble {
+    -webkit-animation:clear_bubble 0.5s 1.2s backwards ease-in-out;
+            animation:clear_bubble 0.5s 1.2s backwards ease-in-out;
+}
+
+@-webkit-keyframes clear_bubble {  
+    0%   {-webkit-transform:rotate(360deg); -webkit-transform-origin:0 0 0; opacity:1;}
+    100% {-webkit-transform:rotate(340deg); -webkit-transform-origin:0 0 0; opacity:0;}  
+}
+
+@keyframes clear_bubble {  
+    0%   {transform:rotate(360deg); transform-origin:0 0 0; opacity:1;}  
+    100% {transform:rotate(420deg); transform-origin:0 0 0; opacity:0;}  
 }
 
 div.bubble::after {
@@ -124,22 +152,22 @@ ul#nav_home > li {
 
 ul#nav_home > li:last-of-type {margin-right:0;}
 
-ul#nav_home > li.active {
-    -webkit-animation:start_boxes 0.5s 0.6s forwards ease-in-out;
-            animation:start_boxes 0.5s 0.6s forwards ease-in-out;
+section#home.active ul#nav_home > li {
+    -webkit-animation:start_boxes 0.5s 0.9s forwards ease-in-out;
+            animation:start_boxes 0.5s 0.9s forwards ease-in-out;
 }
 
-li#box_projects.active {
-    -webkit-animation-delay:0.8s !important;
-            animation-delay:0.8s !important;
+section#home.active li#box_projects {
+    -webkit-animation-delay:1.1s !important;
+            animation-delay:1.1s !important;
 }
-li#box_contact.active {
-    -webkit-animation-delay:1.0s !important;
-            animation-delay:1.0s !important;
+section#home.active li#box_contact {
+    -webkit-animation-delay:1.3s !important;
+            animation-delay:1.3s !important;
 }
-li#box_labs.active {
-    -webkit-animation-delay:1.2s !important;
-            animation-delay:1.2s !important;
+section#home.active li#box_labs {
+    -webkit-animation-delay:1.5s !important;
+            animation-delay:1.5s !important;
 }
 
 @-webkit-keyframes start_boxes {
@@ -152,6 +180,34 @@ li#box_labs.active {
     to   {transform:translate3d(0,0,0)     scale3d(0.8,0.8,1); opacity:1;}
 }
 
+section#home.clear ul#nav_home > li {
+    -webkit-animation:clear_boxes 0.5s 0.9s backwards ease-in-out;
+            animation:clear_boxes 0.5s 0.9s backwards ease-in-out;
+}
+
+section#home.clear li#box_projects {
+    -webkit-animation-delay:0.7s !important;
+            animation-delay:0.7s !important;
+}
+section#home.clear li#box_contact {
+    -webkit-animation-delay:0.5s !important;
+            animation-delay:0.5s !important;
+}
+section#home.clear li#box_labs {
+    -webkit-animation-delay:0.3s !important;
+            animation-delay:0.3s !important;
+}
+
+@-webkit-keyframes clear_boxes {
+    from {-webkit-transform:translate3d(0,0,0)     scale3d(1.0,1.0,1); opacity:1;}
+    to   {-webkit-transform:translate3d(0,100px,0) scale3d(0.8,0.8,1); opacity:0;}
+}
+
+@keyframes clear_boxes {
+    from {transform:translate3d(0,100px,0) scale3d(0.8,0.8,1); opacity:0;}
+    to   {transform:translate3d(0,0,0)     scale3d(0.8,0.8,1); opacity:1;}
+}
+
 ul#nav_home > li a {
     display:block;
     position:relative;
@@ -160,7 +216,6 @@ ul#nav_home > li a {
     height:100%;
     border:5px solid rgb(242,239,223);
     box-shadow:0 0 4px rgb(160,160,160);
-    overflow:hidden;
 }
 
 ul#nav_home > li a::after {
@@ -171,22 +226,22 @@ ul#nav_home > li a::after {
 }
 
 ul#nav_home > li a.active {
-    -webkit-animation:nav_spin 1.4s ease-in-out;
-            animation:nav_spin 1.4s ease-in-out;           
+    -webkit-animation:nav_spin 1.4s ease-in-out forwards;
+            animation:nav_spin 1.4s ease-in-out forwards;           
 }
 
 @-webkit-keyframes nav_spin {
-    from {-webkit-transform:translate3d(0,0,0)      rotateY(0deg)   scale3d(1.0,1.0,1); opacity:1;}
+    0%   {-webkit-transform:translate3d(0,0,0)      rotateY(0deg)   scale3d(1.0,1.0,1); opacity:1;}
     60%  {-webkit-transform:translate3d(0,-225px,0) rotateY(720deg) scale3d(0.8,0.8,1); opacity:1;}
     90%  {-webkit-transform:translate3d(0,100px,0)  rotateY(720deg) scale3d(0.8,0.8,1); opacity:0;}
-    to   {-webkit-transform:translate3d(0,100px,0)  rotateY(720deg) scale3d(0.6,0.6,1); opacity:0;}
+    100% {-webkit-transform:translate3d(0,100px,0)  rotateY(720deg) scale3d(0.8,0.8,1); opacity:0;}
 }
 
 @keyframes nav_spin {
     from {transform:translate3d(0,0,0)      rotateY(0deg)   scale3d(1.0,1.0,1); opacity:1;}
     60%  {transform:translate3d(0,-225px,0) rotateY(720deg) scale3d(0.8,0.8,1); opacity:1;}
     90%  {transform:translate3d(0,100px,0)  rotateY(720deg) scale3d(0.8,0.8,1); opacity:0;}
-    to   {transform:translate3d(0,100px,0)  rotateY(720deg) scale3d(0.6,0.6,1); opacity:0;}
+    to   {transform:translate3d(0,100px,0)  rotateY(720deg) scale3d(0.8,0.8,1); opacity:0;}
 }
 
 ul#nav_home > li a > div.bg {
@@ -244,16 +299,6 @@ ul#nav_home > li a.labs > div.pixel:hover {background-color:rgb(121,134,155);}
 
 /* Height */
 
-@media screen 
-and (max-height : 540px) and (min-width : 1609px) {
-    section#home {height:auto;}
-    section#home > div.wrapper {
-        position:relative;
-        height:auto !important;
-        padding:110px 0;
-    }
-}
-
 @media only screen 
 and (max-height : 490px) {
     section#home {height:auto;}
@@ -303,16 +348,6 @@ and (max-width : 747px) {
         height:auto;
         width:100%;
         padding:20px;
-    }
-    @-webkit-keyframes start_logo {
-        from {-webkit-transform:translate3d(0,-50px,0); opacity:0;}
-        75%  {opacity:1;}
-        to   {-webkit-transform:translate3d(0,0,0); opacity:1;}
-    }
-    @keyframes start_logo {
-        from {transform:translate3d(0,-50px,0); opacity:0;}
-        75%  {opacity:1;}
-        to   {transform:translate3d(0,0,0); opacity:1;}
     }
     section#home div.bubble {
         width:100%;

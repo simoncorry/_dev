@@ -6,6 +6,7 @@ $(function nav_main() {
   
   // Global Vars
   var $window  = $(window);
+  var $body    = $('body');
   var $section = $('section#header');
   var $nav     = $('nav');
   var $nav_ul  = $('#nav_main');
@@ -20,9 +21,9 @@ $(function nav_main() {
   
   var isiPad   = navigator.userAgent.match(/iPad/i) != null;
   
-  // Bar
-  function bar() {
-    $section.on('click', nav_a, function(e) {
+  // Links
+  function links() {
+    $section.on('click touchend', nav_a, function(e) {
       e.preventDefault();
       
       if (running) {return;}
@@ -30,20 +31,25 @@ $(function nav_main() {
       
       var $self = $(this);
       
-      $self
-        .closest($nav_ul)
-        .children()
-        .removeClass('active');
-    
       if(!$self.closest($nav_li).hasClass('active')) {
+      
+        $nav_ul
+          .children()
+          .removeClass('active');
         $self
           .closest($nav_li)
           .toggleClass('active');
+        
+        $section.next('section')
+          .addClass('clear');
+    
       }
-      
+        
       setTimeout(function() {
+        $section.next('section')
+          .addClass('remove');
         running = false;
-      },200);
+      },2300);
       
       return false;     
     });
@@ -52,8 +58,8 @@ $(function nav_main() {
   // Accordion
   function accordion() {
     $nav_li.mouseenter(function() { 
-      var $self   = $(this)
-      var margin  = 15
+      var $self   = $(this);
+      var margin  = 15;
       var h_width = $('#li_home     .title').outerWidth() + margin;
       var b_width = $('#li_blog     .title').outerWidth() + margin;
       var p_width = $('#li_projects .title').outerWidth() + margin;
@@ -72,37 +78,33 @@ $(function nav_main() {
   function accordion_unbind() {
     $nav_li.unbind('mouseenter mouseleave');
   }
-  
+
   // Mobile Button
   function btn_mobile() {
-    $section.on('click touchend', nav_btn, function(e) {
-      e.preventDefault();
-      
+    $section.on('click', nav_btn, function() {
+    
       if (running) {return;}
       running = true;
       
       var $self = $(this);
       var doc_y = $(document).height();
-      
-      if($self.hasClass('active')) {
+
+      if(!$self.hasClass('active')) {
         $self
+          .toggleClass('active')
           .next($nav_ul)
-          .css('height','100%');
+          .toggleClass('active')
+          .css('height',doc_y+'px');
       } else { 
         $self
+          .toggleClass('active')
           .next($nav_ul)
-          .css('height',doc_y);
+          .toggleClass('active')
       }
-      $self
-        .toggleClass('active')
-        .next($nav_ul)
-        .toggleClass('active');
       
       setTimeout(function() {
         running = false;
-      },300); 
-      
-      return false;
+      },400);
     });
   }
   function btn_mobile_clear() {
@@ -123,28 +125,32 @@ $(function nav_main() {
   function btn_mobile_ios() {
     if($nav_btn.hasClass('active')) {
       var doc_y = $(document).height();
-      $nav_ul.css('height', doc_y);
+      $nav_ul.css('height', doc_y+'px');
     }
   }
   
   // Mobile Close
   function mobile_close() {
-    $section.on('click', nav_a, function(e) {
+    $section.on('click touchend', nav_a, function(e) {
       e.preventDefault();
-      var $self = $(this);
+      var $self = $(this);  
       $self
-        .toggleClass('active');
-      $self
+        .toggleClass('active')
         .closest($nav_ul)
+        .removeClass('active')
+        .prev($nav_btn)
         .removeClass('active');
+        
+      return false;
     });
   }
   
   // Load
-  bar();
+  links();
   accordion();
   btn_mobile();
   btn_mobile_ios();
+  mobile_close();
   
   // Responsive Check
   function check_width() {
@@ -152,7 +158,7 @@ $(function nav_main() {
     // < 747
     if (windowsize < 747 || isiPad == true) {
       accordion_unbind();
-      mobile_close();
+      /* mobile_close(); */
     }
     else {
       accordion();

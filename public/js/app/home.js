@@ -5,11 +5,12 @@
 $(function() {
   
   // Global Vars
-  var $window  = $(window);
-  var $nav     = $('nav');
-  var $nav_ul  = $('#nav_home');
-  var $nav_li  = $('#nav_home li');
-  var $nav_a   = $('#nav_home a');
+  var $window    = $(window);
+  var $section_h = $('section#header');
+  var $nav       = $('nav');
+  var $nav_ul    = $('#nav_home');
+  var $nav_li    = $('#nav_home li');
+  var $nav_a     = $('#nav_home a');
   
   var nav_a    = '#nav_home a';
   var running  = false;
@@ -24,14 +25,19 @@ $(function() {
       
       var $self = $(this);
       
-      $self.toggleClass('active');   
+      $self
+        .toggleClass('active');
       
       setTimeout(function() {
-        running = false;
-        $self
-          .toggleClass('active')
-          .toggleClass('remove'); 
-      },1400);
+        $section_h.next('section')
+          .addClass('clear');
+      },1200);
+      
+      setTimeout(function() {
+        $section_h.next('section')
+          .addClass('remove');
+        running = false; 
+      },3500);
       
       return false;
     });
