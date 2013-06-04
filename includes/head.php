@@ -16,6 +16,7 @@
         <link type="text/css" rel="stylesheet" href="/public/css/app/typography.css">
         <link type="text/css" rel="stylesheet" href="/public/css/app/main.css">
         <link type="text/css" rel="stylesheet" href="/public/css/app/header.css">
+        <link type="text/css" rel="stylesheet" href="/public/css/app/footer.css">
         <link type="text/css" rel="stylesheet" href="/public/css/app/home.css">
         
         <!-- /// JS /// -->
@@ -27,4 +28,5 @@
         <script src="/public/js/lib/ga.js"></script>
         <script src="/public/js/app/main.js"></script>
         <script src="/public/js/app/header.js"></script>
+        <script src="/public/js/app/footer.js"></script>
         <script src="/public/js/app/home.js"></script>

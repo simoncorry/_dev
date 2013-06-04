@@ -41,7 +41,7 @@ a:hover {}
 
 /* BUTTONS */
 
-button#btn_mobile {text-indent:-999999px;}
+button {text-indent:-999999px;}
 
 /* HEADER */
 

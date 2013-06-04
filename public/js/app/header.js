@@ -18,36 +18,57 @@ $(function nav_main() {
   var nav_a    = '#nav_main a';
   var nav_btn  = '#btn_mobile';
   var running  = false;
-  
   var isiPad   = navigator.userAgent.match(/iPad/i) != null;
   
-  // Links
+  // Anchor Link Calls
   function links() {
-    $section.on('click touchend', nav_a, function(e) {
+    $section.on('click', nav_a, function(e) {
       e.preventDefault();
       
       if (running) {return;}
       running = true;
       
-      var $self = $(this);
+      var $self   = $(this);
+      var bg_main = $self.children('div.bg_main').css('background-color');
       
-      if(!$self.closest($nav_li).hasClass('active')) {
-      
+      // Link - Toggle Bar
+      function toggle_bar() {
         $nav_ul
           .children()
           .removeClass('active');
         $self
           .closest($nav_li)
-          .toggleClass('active');
-        
+          .toggleClass('active');   
+      }
+      
+      // Link - Remove Section
+      function remove_section() {
         $section.next('section')
           .addClass('clear');
-    
+        setTimeout(function() {
+          $section.next('section')
+            .addClass('remove');
+        },2300);
       }
-        
+      
+      // Link - Apply BG
+      function apply_bg() {
+        setTimeout(function() {
+          $body.css('background-color',bg_main);
+        },1900);
+      }
+      
+      // If Link is NOT active
+      if(!$self.closest($nav_li).hasClass('active')) {
+
+        // Call Functions
+        toggle_bar();  
+        remove_section();
+        apply_bg();
+
+      } 
+      
       setTimeout(function() {
-        $section.next('section')
-          .addClass('remove');
         running = false;
       },2300);
       
@@ -131,7 +152,7 @@ $(function nav_main() {
   
   // Mobile Close
   function mobile_close() {
-    $section.on('click touchend', nav_a, function(e) {
+    $section.on('click', nav_a, function(e) {
       e.preventDefault();
       var $self = $(this);  
       $self
@@ -172,7 +193,9 @@ $(function nav_main() {
   }
   
   // Event Listners
-  $window.resize(check_width); // Bind event listener (window resize)
-  $window.bind('orientationchange', check_orientation); // Bind event listener (iOS orientation change)
+  setTimeout(function() {
+    $window.resize(check_width); // Bind event listener (window resize)
+    $window.bind('orientationchange', check_orientation); // Bind event listener (iOS orientation change)
+  },1);
   
 });

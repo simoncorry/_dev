@@ -48,7 +48,7 @@
             <nav>   
                 <button id="btn_mobile">Nav</button>
                 <ul id="nav_main">
-                    <li id="li_home" class="active">
+                    <li id="li_home">
                         <div class="bar"></div>
                         <div class="title">Home</div>
                         <a href="#" class="logo">
@@ -78,6 +78,7 @@
                             <div class="pixel"></div>
                             <div class="pixel"></div>
                             <div class="pixel"></div>
+                            <div class="bg_main"></div>
                         </a>
                     </li>
                     <li id="li_blog">
@@ -110,6 +111,7 @@
                             <div class="pixel"></div>
                             <div class="pixel"></div>
                             <div class="pixel"></div>
+                            <div class="bg_main"></div>
                         </a>
                     </li>
                     <li id="li_projects">
@@ -142,6 +144,7 @@
                             <div class="pixel"></div>
                             <div class="pixel"></div>
                             <div class="pixel"></div>
+                            <div class="bg_main"></div>
                         </a>
                     </li>
                     <li id="li_contact">
@@ -174,6 +177,7 @@
                             <div class="pixel"></div>
                             <div class="pixel"></div>
                             <div class="pixel"></div>
+                            <div class="bg_main"></div>
                         </a>
                     </li>
                     <li id="li_labs">
@@ -206,6 +210,7 @@
                             <div class="pixel"></div>
                             <div class="pixel"></div>
                             <div class="pixel"></div>
+                            <div class="bg_main"></div>
                         </a>
                     </li>
                 </ul>
@@ -738,14 +743,15 @@
                         </li>
                     </ul>
                 </nav>
-                <!--
-<a class="box blog"></a>
-                <a class="box projects"></a>
-                <a class="box contact"></a>
-                <a class="box labs"></a>
--->
                 <div class="clearfix"></div>
             </div>
+        </section>
+        <section id="footer">
+            <button id="btn_remix">Remix Colors</button>
+            <button id="btn_view">
+                <div class="btn_bg"></div>
+            </button> 
+            <div class="clearfix"></div>
         </section>
     
         <?php /* Google Plus */ include_once($_SERVER['DOCUMENT_ROOT'] . "/includes/google-plus.php"); ?>
