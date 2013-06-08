@@ -69,14 +69,10 @@ ul#nav_home > li a::after {
     color:rgb(242,239,223);
 }
 
-ul#nav_main > li a.blog::after,
-ul#nav_home > li a.blog::after     {text-shadow:-1px -1px 0 rgb(126,158,142);}
-ul#nav_main > li a.projects::after,
-ul#nav_home > li a.projects::after {text-shadow:-1px -1px 0 rgb(142,117,100);}
-ul#nav_main > li a.contact::after, 
-ul#nav_home > li a.contact::after  {text-shadow:-1px -1px 0 rgb(175,153,109);}
-ul#nav_main > li a.labs::after, 
-ul#nav_home > li a.labs::after     {text-shadow:-1px -1px 0 rgb(128,141,160);}
+ul#nav_main > li a.blog::after {text-shadow:-1px -1px 0 rgb(126,158,142);}
+ul#nav_main > li a.projects::after {text-shadow:-1px -1px 0 rgb(142,117,100);}
+ul#nav_main > li a.contact::after {text-shadow:-1px -1px 0 rgb(175,153,109);}
+ul#nav_main > li a.labs::after {text-shadow:-1px -1px 0 rgb(128,141,160);}
 
 /* RESPONSIVE ADJUSTMENTS */
 

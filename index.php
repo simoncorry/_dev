@@ -48,7 +48,7 @@
             <nav>   
                 <button id="btn_mobile">Nav</button>
                 <ul id="nav_main">
-                    <li id="li_home">
+                    <li id="li_home" class="active">
                         <div class="bar"></div>
                         <div class="title">Home</div>
                         <a href="#" class="logo">
@@ -358,6 +358,7 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
+                                <div class="bg_main"></div>
                             </a>
                         </li>
                         <li id="box_projects">
@@ -485,6 +486,7 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
+                                <div class="bg_main"></div>
                             </a>
                         </li>
                         <li id="box_contact">
@@ -612,6 +614,7 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
+                                <div class="bg_main"></div>
                             </a>
                         </li>
                         <li id="box_labs">
@@ -739,6 +742,7 @@
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
                                 <div class="pixel"></div>
+                                <div class="bg_main"></div>
                             </a>
                         </li>
                     </ul>

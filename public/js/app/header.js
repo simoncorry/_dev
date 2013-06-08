@@ -2,7 +2,7 @@
 
 // NAV
 
-$(function nav_main() {
+$(function header() {
   
   // Global Vars
   var $window  = $(window);
@@ -21,7 +21,7 @@ $(function nav_main() {
   var isiPad   = navigator.userAgent.match(/iPad/i) != null;
   
   // Anchor Link Calls
-  function links() {
+  function nav_main() {
     $section.on('click', nav_a, function(e) {
       e.preventDefault();
       
@@ -55,7 +55,7 @@ $(function nav_main() {
       function apply_bg() {
         setTimeout(function() {
           $body.css('background-color',bg_main);
-        },1900);
+        },1400);
       }
       
       // If Link is NOT active
@@ -167,7 +167,7 @@ $(function nav_main() {
   }
   
   // Load
-  links();
+  nav_main();
   accordion();
   btn_mobile();
   btn_mobile_ios();

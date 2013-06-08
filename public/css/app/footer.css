@@ -96,15 +96,18 @@ button#btn_remix:hover {
             transform:rotate(360deg) rotateX(0);
 }
 
+button#btn_remix.btn_spin {
+    -webkit-animation:btn_spin 0.6s linear infinite;
+            animation:btn_spin 0.6s linear infinite;
+}
+
 @-webkit-keyframes btn_spin {
     from {-webkit-transform:rotate(0deg)   rotateX(0);}
-    50%  {-webkit-transform:rotate(180deg) rotateX(0);}
     to   {-webkit-transform:rotate(360deg) rotateX(0);}
 }
 
 @keyframes btn_spin {
     from {transform:rotate(0deg)   rotateX(0);}
-    50%  {transform:rotate(180deg) rotateX(0);}
     to   {transform:rotate(360deg) rotateX(0);}
 }
 
@@ -137,9 +140,17 @@ and (max-device-width : 1024px) {
         background-color:rgba(34,47,53,0.6);
         box-shadow:inset 1px 1px 1px rgba(36,49,56,0.1);
     }
-    button#btn_remix.btn_spin {
-        -webkit-animation:btn_spin 0.8s linear;
-                animation:btn_spin 0.8s linear;
+    button#btn_view.active {
+        background-color:rgba(34,47,53,0.8);
+        box-shadow:inset 1px 1px 1px rgba(36,49,56,0.2);
+    }
+    button#btn_view:hover div.btn_bg {
+        -webkit-transform:translate3d(0,0,0);
+                transform:translate3d(0,0,0);
+    }
+    button#btn_view.active div.btn_bg {
+        -webkit-transform:translate3d(0,-30px,0);
+                transform:translate3d(0,-30px,0);
     }
 }
 
@@ -159,9 +170,10 @@ and (max-width : 747px) {
         padding:20px;
     }
     
-    /* Remix Button */
+    /* Buttons */
     button#btn_view,
-    button#btn_remix {
+    button#btn_remix,
+    button#btn_view div.btn_bg {
         -webkit-transition:none;
         transition:        none;
     }
@@ -170,9 +182,13 @@ and (max-width : 747px) {
         background-color:rgba(34,47,53,0.6);
         box-shadow:inset 1px 1px 1px rgba(36,49,56,0.1);
     }
-    button#btn_remix.btn_spin {
-        -webkit-animation:btn_spin 0.8s linear;
-                animation:btn_spin 0.8s linear;
+    button#btn_view:hover div.btn_bg {
+        -webkit-transform:translate3d(0,0,0);
+                transform:translate3d(0,0,0);
+    }
+    button#btn_view.active div.btn_bg {
+        -webkit-transform:translate3d(0,-30px,0);
+                transform:translate3d(0,-30px,0);
     }
 }
 
