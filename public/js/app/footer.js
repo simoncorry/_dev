@@ -10,7 +10,7 @@ $(function footer() {
   var $section   = $('section#footer');
   var $header    = $('section#header');
   var $content   = $('section:nth-of-type(2)');
-  var $h_c       = $('section#header, section:nth-of-type(2)');
+  var $h_c       = $('section#header nav, section:nth-of-type(2)');
   var $view_btn  = $('#btn_view');
   var $remix_btn = $('#btn_remix');
   var $nav_a     = $('ul#nav_main li a')
