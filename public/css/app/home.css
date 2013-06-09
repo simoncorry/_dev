@@ -123,12 +123,12 @@ section#home.active div.bubble {
 }
 
 @-webkit-keyframes start_bubble {  
-    0%   {-webkit-transform:rotate(345deg); -webkit-transform-origin:0 0 0; opacity:0;}
+    0%   {-webkit-transform:rotate(342deg); -webkit-transform-origin:0 0 0; opacity:0;}
     100% {-webkit-transform:rotate(360deg); -webkit-transform-origin:0 0 0; opacity:1;}  
 }
 
 @keyframes start_bubble {  
-    0%   {transform:rotate(345deg); transform-origin:0 0 0; opacity:0;}  
+    0%   {transform:rotate(342deg); transform-origin:0 0 0; opacity:0;}  
     100% {transform:rotate(360deg); transform-origin:0 0 0; opacity:1;}  
 }
 
@@ -139,12 +139,12 @@ section#home.clear div.bubble {
 
 @-webkit-keyframes clear_bubble {  
     0%   {-webkit-transform:rotate(360deg); -webkit-transform-origin:0 0 0; opacity:1;}
-    100% {-webkit-transform:rotate(345deg); -webkit-transform-origin:0 0 0; opacity:0;}  
+    100% {-webkit-transform:rotate(342deg); -webkit-transform-origin:0 0 0; opacity:0;}  
 }
 
 @keyframes clear_bubble {  
     0%   {transform:rotate(360deg); transform-origin:0 0 0; opacity:1;}  
-    100% {transform:rotate(345deg); transform-origin:0 0 0; opacity:0;}  
+    100% {transform:rotate(342deg); transform-origin:0 0 0; opacity:0;}  
 }
 
 div.bubble::after {
