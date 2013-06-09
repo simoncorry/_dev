@@ -92,7 +92,7 @@ $(function header() {
       if($self.is('#li_contact'))  {$self.nextAll('li').css('transform','translate3d('+c_width+'px,0,0)');}
       if($self.is('#li_labs'))     {$self.nextAll('li').css('transform','translate3d('+l_width+'px,0,0)');}    
     });          
-    $nav_li.mouseleave(function() {   
+    $nav_li.mouseleave(function() {
       $nav_li.css('transform','translate3d(0,0,0)');
     });
   }

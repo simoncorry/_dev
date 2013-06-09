@@ -63,14 +63,14 @@ $(function home() {
         setTimeout(function() {
           $section
             .addClass('remove'); 
-        },2600);
+        },2800);
       }
       
       // Home - Apply BG
       function apply_bg() {
         setTimeout(function() {
           $body.css('background-color',bg_main);
-        },2600);
+        },2800);
       }
       
       // Call Functions

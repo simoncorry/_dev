@@ -81,6 +81,11 @@ $(function footer() {
         var bg_colors      = [];
         var get_bg_colors  = $bg_main.each(function() {bg_colors.push($(this).css('background-color'));});
         var rand_bg_color  = bg_colors[Math.floor(Math.random()*bg_colors.length)];
+        var hover_logo     = 'rgb(117,130,155)';
+        var hover_blog     = 'rgb(118,158,139)';
+        var hover_projects = 'rgb(133,107,84)';
+        var hover_contact  = 'rgb(171,148,98)';
+        var hover_labs     = 'rgb(78,89,88)';
         
         // Change BG Color
         if(rand_bg_color == prev_bg_color) {
@@ -99,7 +104,29 @@ $(function footer() {
             var create_rgba_2 = 'rgb('+ slice_rgba_2 +')';
             
             $(this).children(bg_main).css('background-color',rand_bg_color);
-            $(this).children(bg_pixel).css('background-color',create_rgba_2);  
+            $(this).children(bg_pixel).css('background-color',create_rgba_2);
+            
+            // Change pixel hover
+            $(this).children(bg_pixel).hover(
+              function() {
+                
+                var this_bg_color = $(this).css('background-color');
+                
+                if(this_bg_color == 'rgb(137, 150, 175)') {
+                  $(this).css('background-color',hover_logo);
+                } else if(this_bg_color == 'rgb(138, 178, 159)') {
+                  $(this).css('background-color',hover_blog);  
+                } else if(this_bg_color == 'rgb(153, 127, 104)') {
+                  $(this).css('background-color',hover_projects);  
+                } else if(this_bg_color == 'rgb(191, 168, 118)') {
+                  $(this).css('background-color',hover_contact);  
+                } else if(this_bg_color == 'rgb(98, 109, 108)') {
+                  $(this).css('background-color',hover_labs);  
+                }
+                
+              },function() {
+                $(this).css('background-color',create_rgba_2);
+            });  
             
           } else if($(this).children(bg_main).css('background-color') == rand_bg_color) {
             
@@ -109,6 +136,28 @@ $(function footer() {
             
             $(this).children(bg_main).css('background-color',prev_bg_color);
             $(this).children(bg_pixel).css('background-color',create_rgba);
+            
+            // Change pixel hover
+            $(this).children(bg_pixel).hover(
+              function() {
+                
+                var this_bg_color = $(this).css('background-color');
+                
+                if(this_bg_color == 'rgb(137, 150, 175)') {
+                  $(this).css('background-color',hover_logo);
+                } else if(this_bg_color == 'rgb(138, 178, 159)') {
+                  $(this).css('background-color',hover_blog);  
+                } else if(this_bg_color == 'rgb(153, 127, 104)') {
+                  $(this).css('background-color',hover_projects);  
+                } else if(this_bg_color == 'rgb(191, 168, 118)') {
+                  $(this).css('background-color',hover_contact);  
+                } else if(this_bg_color == 'rgb(98, 109, 108)') {
+                  $(this).css('background-color',hover_labs);  
+                }
+                
+              },function() {
+                $(this).css('background-color',create_rgba);
+            });
               
           }
                
@@ -125,11 +174,33 @@ $(function footer() {
             
             $(this).children(bg_h_main).css('background-color',prev_bg_color);
             $(this).children(bg_h_pixel).css('background-color',create_rgba);
-              
+            
+            // Change pixel hover
+            $(this).children(bg_h_pixel).hover(
+              function() {
+                
+                var this_bg_color = $(this).css('background-color');
+                
+                if(this_bg_color == 'rgb(137, 150, 175)') {
+                  $(this).css('background-color',hover_logo);
+                } else if(this_bg_color == 'rgb(138, 178, 159)') {
+                  $(this).css('background-color',hover_blog);  
+                } else if(this_bg_color == 'rgb(153, 127, 104)') {
+                  $(this).css('background-color',hover_projects);  
+                } else if(this_bg_color == 'rgb(191, 168, 118)') {
+                  $(this).css('background-color',hover_contact);  
+                } else if(this_bg_color == 'rgb(98, 109, 108)') {
+                  $(this).css('background-color',hover_labs);  
+                }
+                
+              },function() {
+                $(this).css('background-color',create_rgba);
+            });
+          
           }
-               
+                 
         });
-        
+      
       }
       
       // Call Functions

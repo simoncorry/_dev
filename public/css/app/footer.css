@@ -89,6 +89,14 @@ button#btn_remix {
                        transform         0.6s ease-in-out;
 }
 
+@-moz-document url-prefix() {
+    button#btn_remix { 
+        transition: background-color  0.3s ease-in-out,
+                    box-shadow        0.3s ease-in-out,
+                    transform         0.0s ease-in-out;
+    }
+}
+
 button#btn_remix:hover {
     background-color:rgba(34,47,53,0.8); 
     box-shadow:inset 1px 1px 1px rgba(36,49,56,0.2);
@@ -99,6 +107,12 @@ button#btn_remix:hover {
 button#btn_remix.btn_spin {
     -webkit-animation:btn_spin 0.6s linear infinite;
             animation:btn_spin 0.6s linear infinite;
+}
+
+@-moz-document url-prefix() {
+    button#btn_remix.btn_spin { 
+        animation:none;
+    }
 }
 
 @-webkit-keyframes btn_spin {
