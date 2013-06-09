@@ -225,6 +225,9 @@
         <section id="home">
             <div class="wrapper">
                 <div class="logo">
+                    <div class="moon"></div>
+                    <div class="ship"></div>
+                    <div class="exhaust"></div>
                     <div class="pixel p9"></div>
                     <div class="pixel p8"></div>
                     <div class="pixel p6"></div>
