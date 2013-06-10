@@ -803,7 +803,7 @@
                 <nav>
                     <ul id="nav_home">
                         <li id="box_blog">
-                            <div class="bar"></div>
+                            <div class="title">Blog</div>
                             <a href="#" class="blog">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
@@ -931,7 +931,7 @@
                             </a>
                         </li>
                         <li id="box_projects">
-                            <div class="bar"></div>
+                            <div class="title">Projects</div>
                             <a href="#" class="projects">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
@@ -1059,7 +1059,7 @@
                             </a>
                         </li>
                         <li id="box_contact">
-                            <div class="bar"></div>
+                            <div class="title">Contact</div>
                             <a href="#" class="contact">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>
@@ -1187,7 +1187,7 @@
                             </a>
                         </li>
                         <li id="box_labs">
-                            <div class="bar"></div>
+                            <div class="title">Labs</div>
                             <a href="#" class="labs">
                                 <div class="bg"></div>
                                 <div class="pixel"></div>

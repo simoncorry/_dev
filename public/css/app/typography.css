@@ -62,17 +62,11 @@ section#home div.bubble span.quote {
     text-shadow:1px 1px 0 rgb(242,239,223);
 }
 
-ul#nav_main > li a::after,
-ul#nav_home > li a::after {
+ul#nav_home > li > div.title {
     font-size:14px;
     font-weight:700;
     color:rgb(242,239,223);
 }
-
-ul#nav_main > li a.blog::after {text-shadow:-1px -1px 0 rgb(126,158,142);}
-ul#nav_main > li a.projects::after {text-shadow:-1px -1px 0 rgb(142,117,100);}
-ul#nav_main > li a.contact::after {text-shadow:-1px -1px 0 rgb(175,153,109);}
-ul#nav_main > li a.labs::after {text-shadow:-1px -1px 0 rgb(128,141,160);}
 
 /* RESPONSIVE ADJUSTMENTS */
 
@@ -104,8 +98,10 @@ and (max-width : 747px) {
         font-size:14px;
         font-style:normal;
     }
-    ul#nav_home > li a::after {
-        font-size:16px;
+    ul#nav_main > li > div.title {
+        line-height:normal;
+        color:rgb(242,239,223);
+        text-shadow:none;
     }
 }
 
