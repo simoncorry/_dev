@@ -27,10 +27,10 @@ button#btn_mobile {
     border:5px solid rgb(242,239,223);
     margin-right:20px;
     box-shadow:0 0 4px rgb(160,160,160);
-    -webkit-transition:background-color 0.3s ease-in-out,
-                       box-shadow       0.3s ease-in-out;
-    transition:        background-color 0.3s ease-in-out,
-                       box-shadow       0.3s ease-in-out;
+    -webkit-transition:background-color 0.1s ease-in-out 0.2s,
+                       box-shadow       0.1s ease-in-out 0.2s;
+    transition:        background-color 0.1s ease-in-out 0.2s,
+                       box-shadow       0.1s ease-in-out 0.2s;
 }
 
 button#btn_mobile.active {

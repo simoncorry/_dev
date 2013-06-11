@@ -62,7 +62,7 @@ section#home div.bubble span.quote {
     text-shadow:1px 1px 0 rgb(242,239,223);
 }
 
-ul#nav_home > li > div.title {
+ul#nav_home > li a > div.title {
     font-size:14px;
     font-weight:700;
     color:rgb(242,239,223);
@@ -98,7 +98,8 @@ and (max-width : 747px) {
         font-size:14px;
         font-style:normal;
     }
-    ul#nav_main > li > div.title {
+    ul#nav_main > li > div.title,
+    ul#nav_home > li a > div.title {
         line-height:normal;
         color:rgb(242,239,223);
         text-shadow:none;
