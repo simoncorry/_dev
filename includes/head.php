@@ -8,7 +8,6 @@
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/images/lib/icons/apple-touch-icon-144x144-precomposed.png">
         
         <!-- /// CSS /// -->
-        <link type="text/css" rel="stylesheet" href="/public/css/lib/normalize.min.css">  
         <link type="text/css" rel="stylesheet" href="/public/css/lib/reset.min.css">  
         <link type="text/css" rel="stylesheet" href="/public/css/lib/jquery.preloader-1.2.css">
         <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
@@ -30,3 +29,4 @@
         <script src="/public/js/app/header.js"></script>
         <script src="/public/js/app/footer.js"></script>
         <script src="/public/js/app/home.js"></script>
+        <script src="/public/js/app/bubble_posts.js"></script>

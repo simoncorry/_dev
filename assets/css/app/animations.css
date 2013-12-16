@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* /// ANIMATIONS /// */
+
+/* SECTION */
+
+section.animations {
+    position:fixed;
+    width:100%;
+    height:100%;
+    opacity:0;
+    pointer-events:all;
+    -webkit-transition:opacity 0.6s 2.0s ease-in-out;
+            transition:opacity 0.6s 2.0s ease-in-out;
+}
+
+section.animations.active {opacity:1;}
+
+div.page_animation {
+	width:100%;
+    height:100%;
+    opacity:0;
+    -webkit-transition:opacity 0.6s ease-in-out;
+            transition:opacity 0.6s ease-in-out; 
+}
+
+div.page_animation.active_page_animations {opacity:1;}
+div.page_animation.remove_page_animations {display:none;}
+
+/* Float 1 */
+.hit_float_1 {
+    -webkit-animation:hit_float_1 10s 1 forwards;
+            animation:hit_float_1 10s 1 forwards;
+}
+
+@-webkit-keyframes hit_float_1
+{
+    0%   {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.9; -webkit-transform:scale3d(0.8,0.8,1);}
+    80%  {opacity:0.9; -webkit-transform:scale3d(0.8,0.8,1);}
+    100% {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);} 
+}
+
+@keyframes hit_float_1
+{
+    0%   {opacity:1;   transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.9; transform:scale3d(0.8,0.8,1);}
+    80%  {opacity:0.9; transform:scale3d(0.8,0.8,1);}
+    100% {opacity:1;   transform:scale3d(1.0,1.0,1);} 
+}
+
+/* Float 2 */
+.hit_float_2 {
+    -webkit-animation:hit_float_2 11s 1 forwards;
+            animation:hit_float_2 11s 1 forwards;
+}
+
+@-webkit-keyframes hit_float_2
+{
+    0%   {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.8; -webkit-transform:scale3d(0.75,0.75,1);}
+    80%  {opacity:0.8; -webkit-transform:scale3d(0.75,0.75,1);}
+    100% {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);} 
+}
+
+@keyframes hit_float_2
+{
+    0%   {opacity:1;   transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.8; transform:scale3d(0.75,0.75,1);}
+    80%  {opacity:0.8; transform:scale3d(0.75,0.75,1);}
+    100% {opacity:1;   transform:scale3d(1.0,1.0,1);} 
+}
+
+/* Float 3 */
+.hit_float_3 {
+    -webkit-animation:hit_float_3 12s 1 forwards;
+            animation:hit_float_3 12s 1 forwards;
+}
+
+@-webkit-keyframes hit_float_3
+{
+    0%   {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.6; -webkit-transform:scale3d(0.7,0.7,1);}
+    80%  {opacity:0.6; -webkit-transform:scale3d(0.7,0.7,1);}
+    100% {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);} 
+}
+
+@keyframes hit_float_3
+{
+    0%   {opacity:1;   transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.6; transform:scale3d(0.7,0.7,1);}
+    80%  {opacity:0.6; transform:scale3d(0.7,0.7,1);}
+    100% {opacity:1;   transform:scale3d(1.0,1.0,1);} 
+}
+
+/* Float 4 */
+.hit_float_4 {
+    -webkit-animation:hit_float_4 13s 1 forwards;
+            animation:hit_float_4 13s 1 forwards;
+}
+
+@-webkit-keyframes hit_float_4
+{
+    0%   {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.4; -webkit-transform:scale3d(0.65,0.65,1);}
+    80%  {opacity:0.4; -webkit-transform:scale3d(0.65,0.65,1);}
+    100% {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);} 
+}
+
+@keyframes hit_float_4
+{
+    0%   {opacity:1;   transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.4; transform:scale3d(0.65,0.65,1);}
+    80%  {opacity:0.4; transform:scale3d(0.65,0.65,1);}
+    100% {opacity:1;   transform:scale3d(1.0,1.0,1);} 
+}
+
+/* Float 5 */
+.hit_float_5 {
+    -webkit-animation:hit_float_5 14s 1 forwards;
+            animation:hit_float_5 14s 1 forwards;
+}
+
+@-webkit-keyframes hit_float_5
+{
+    0%   {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.2; -webkit-transform:scale3d(0.6,0.6,1);}
+    80%  {opacity:0.2; -webkit-transform:scale3d(0.6,0.6,1);}
+    100% {opacity:1;   -webkit-transform:scale3d(1.0,1.0,1);} 
+}
+
+@keyframes hit_float_5
+{
+    0%   {opacity:1;   transform:scale3d(1.0,1.0,1);}
+    60%  {opacity:0.2; transform:scale3d(0.6,0.6,1);}
+    80%  {opacity:0.2; transform:scale3d(0.6,0.6,1);}
+    100% {opacity:1;   transform:scale3d(1.0,1.0,1);} 
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 747px) {
+    
+    /* SECTION */
+
+	section.animations {display:none;}
+    
+}

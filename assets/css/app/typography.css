@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* /// TYPOGRAPHY /// */
+
+/* GENERAL */
+
+body {
+    font-family:'Noto Sans', sans-serif;
+    font-size:14px;
+    line-height:20px;
+    font-weight:400;
+    letter-spacing:0.5px;
+    color:rgb(104,107,109);
+    text-shadow:none;
+    word-break:break-word;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* HEADERS */
+
+h1 {
+    font-family:'Oswald', sans-serif;
+    font-size:28px;
+    line-height:28px;
+    font-weight:400;
+    letter-spacing:1;
+    text-transform:uppercase;
+    color:rgb(206,114,62);
+    text-shadow:1px 1px 0 rgb(242,239,223);
+    margin-bottom:12px;
+}
+
+h2 {}
+
+h3 {}
+
+/* ANCHORS */
+
+a {text-decoration:none;}
+
+a:hover {text-decoration:none;}
+
+/* BUTTONS */
+
+button {text-indent:-999999px;}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+/* Height */
+/*
+@media only screen 
+and (max-height: 704px) {}
+*/
+
+/* Width */
+
+/*
+@media only screen 
+and (max-width : 1609px) {}
+*/
+
+/*
+@media only screen 
+and (max-width : 999px) {}
+*/
+
+@media only screen 
+and (max-width : 747px) {
+    h1 {
+        font-size:30px;
+        line-height:34px;
+    }
+
+}
+
+/*
+@media only screen 
+and (max-width : 440px) {}
+*/

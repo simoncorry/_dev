@@ -127,11 +127,13 @@
             $('.typeTarget .square_1, .typeTarget .square_2, .typeTarget .square_3, .typeTarget .square_4')
               .addClass('invisible'),
             $('#wrapper')
-              .addClass('show');
+              .addClass('show');    
+          },1000);
+          setTimeout(function() {
             // Simon Corry Homepage
             $('section#home')
               .addClass('active');
-          },1000);
+          },1100);
         }    
     
       });  

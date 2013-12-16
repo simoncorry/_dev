@@ -22,7 +22,7 @@ $(function header() {
   
   // Anchor Link Calls
   function nav_main() {
-    $section.on('click', nav_a, function(e) {
+    $section.on('click touchend', nav_a, function(e) {
       e.preventDefault();
       
       if (running) {return;}
@@ -55,7 +55,7 @@ $(function header() {
       function apply_bg() {
         setTimeout(function() {
           $body.css('background-color',bg_main);
-        },1400);
+        },1600);
       }
       
       // If Link is NOT active

@@ -93,7 +93,7 @@ a:focus,a:active {outline:none;}
 }
 
 @media only screen 
-and (max-width : 747px) {
+and (max-width : 440px) {
     .mh,
     .mobile_hide {display:none;}
     .ms,

@@ -175,15 +175,12 @@ and (max-width : 999px) {}
 
 @media only screen 
 and (max-width : 747px) {
-    
     /* Footer */
     section#footer {
-        position:relative;
-        top:0;
-        height:auto;
+        display:none;
+        bottom:30px;
         padding:20px;
     }
-    
     /* Buttons */
     button#btn_view,
     button#btn_remix,
@@ -205,8 +202,3 @@ and (max-width : 747px) {
                 transform:translate3d(0,-30px,0);
     }
 }
-
-/*
-@media only screen 
-and (max-width : 440px) {}
-*/

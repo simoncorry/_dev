@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px">
+<g>
+	<rect x="10" y="30" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="20" y="30" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="30" y="30" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="10" y="40" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="30" y="40" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="10" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="20" opacity="0.6" fill="#283740" width="10" height="10"/>
+	<rect x="30" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="40" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect y="10" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="10" y="10" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="20" y="10" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="30" y="10" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="40" y="10" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect y="20" opacity="0.6" fill="#283740" width="10" height="10"/>
+	<rect x="10" y="20" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="20" y="20" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="30" y="20" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="40" y="20" opacity="0.6" fill="#283740" width="10" height="10"/>
+	<rect y="30" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect x="40" y="30" opacity="0.8" fill="#283740" width="10" height="10"/>
+	<rect y="40" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="40" y="40" opacity="0.9" fill="#283740" width="10" height="10"/>
+	<rect x="20" y="40" opacity="0.6" fill="#283740" width="10" height="10"/>
+</g>
+<g>
+	<polygon fill="#F2EFDF" points="30,50 25,44.737 20,50 20,40 30,40 	"/>
+	<polygon fill="#F2EFDF" points="10,50 20,50 20,40 	"/>
+	<polygon fill="#F2EFDF" points="40,50 30,50 30,40 	"/>
+	<polygon fill="#F2EFDF" points="30,40 20,40 25,35 	"/>
+	<polygon fill="#F2EFDF" points="30,30 20,30 25,25 	"/>
+	<rect x="10" y="10" fill="#F2EFDF" width="5" height="5"/>
+</g>
+</svg>

@@ -9,6 +9,7 @@ $(function home() {
   var $body      = $('body');
   var $section   = $('section#home');
   var $section_h = $('section#header');
+  var $bubble    = $('div.bubble');
   var $nav       = $('nav');
   var $nav_ul    = $('#nav_home');
   var $nav_li    = $('#nav_home li');
@@ -17,7 +18,7 @@ $(function home() {
   var nav_a    = '#nav_home a';
   var running  = false;
   
-  // Nav Spin
+  // Nav Home
   function nav_home() {
     $section.on('click', nav_a, function(e) {
       e.preventDefault();
@@ -88,7 +89,7 @@ $(function home() {
   
   // Load
   $(function() {
-    nav_home(); 
+    nav_home();
   });
   
 });
